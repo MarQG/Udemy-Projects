@@ -20,7 +20,7 @@ var commentRoutes       = require("./routes/comments"),
 console.log(process.env.DATABASEURL);
 
 mongoose.connect(process.env.DATABASEURL);
-//mongoose.connect("mongodb://yelp_camp_admin_g87:lh4F1fO9aHhf@ds017726.mlab.com:17726/yelpcamp_marqg87");
+//mongoose.connect("external DB Link");
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
